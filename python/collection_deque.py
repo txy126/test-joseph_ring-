@@ -4,6 +4,8 @@ from memory_profiler import profile
 from collections import deque
 
 
+
+
 class Person:
 
     def __init__(self, name, age, gender):
@@ -54,6 +56,7 @@ joseph_ring1 = JosephRing(start, interval, people)
 start_time = time.time()
 winner = joseph_ring1.kill()
 end_time = time.time()
+
 print(f"the last person is {winner.name}")
 
 print(f"cost time {end_time - start_time} seconds")
